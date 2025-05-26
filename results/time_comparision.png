@@ -1,0 +1,10 @@
+import matplotlib.pyplot as plt
+
+# Sample benchmark data
+methods = ['Standard (itertools)', 'Your Parallel Algorithm']
+times = [84, 7]  # Adjust with your benchmark data
+
+plt.bar(methods, times, color=['red', 'green'])
+plt.title("Time Comparison of Permutation Generators")
+plt.ylabel("Time (seconds)")
+plt.savefig("time_comparison.png")
